@@ -10,9 +10,8 @@ local foe = neutral - friend
 
 local mathhuge = math.huge
 local mathsqrt = math.sqrt
-local mathpow = math.pow
-local mathmax = math.max
-local mathfloor = math.floor
+
+
 
 local HKITEM = {[ITEM_1] = HK_ITEM_1,[ITEM_2] = HK_ITEM_2,[ITEM_3] = HK_ITEM_3,[ITEM_4] = HK_ITEM_4,[ITEM_5] = HK_ITEM_5,[ITEM_6] = HK_ITEM_6,[ITEM_7] = HK_ITEM_7}
 local HKSPELL = {[SUMMONER_1] = HK_SUMMONER_1,[SUMMONER_2] = HK_SUMMONER_2,}
