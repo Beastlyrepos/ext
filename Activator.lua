@@ -50,7 +50,7 @@ local function GetMode()
     elseif _G.gsoSDK then
         return _G.gsoSDK.Orbwalker:UOL_GetMode()
     else
-        return GOS.GetMode()
+        return _G.GOS.GetMode()
     end
 end
 
