@@ -48,6 +48,7 @@ local function GetMode()
             return "Flee"
         end
     elseif _G.gsoSDK then
+    PrintChat (_G.gsoSDK.Orbwalker:UOL_GetMode()) 
         return _G.gsoSDK.Orbwalker:UOL_GetMode()
     else
         return _G.GOS.GetMode()
