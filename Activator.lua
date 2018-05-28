@@ -48,7 +48,6 @@ local function GetMode()
             return "Flee"
         end
     elseif _G.gsoSDK then
-    PrintChat (_G.gsoSDK.Orbwalker:GetMode()) 
         return _G.gsoSDK.Orbwalker:GetMode()
     else
         return _G.GOS.GetMode()
@@ -57,8 +56,7 @@ end
 
 local function GetTarget(range) 
     local target = nil 
-    if _G.gsoSDK then 
-        PrintChat (_G.gsoSDK.TS:GetTarget(range))     
+    if _G.gsoSDK then     
 		target = _G.gsoSDK.TS:GetTarget(range) 
     elseif _G.SDK and _G.SDK.Orbwalker then 
 		target = _G.SDK.TargetSelector:GetTarget(range) 
