@@ -56,15 +56,16 @@ end
 
 local function GetTarget(range) 
     local target = nil 
-    if _G.gsoSDK then     
-        target = _G.gsoSDK.TS:GetTarget(range) 
+    if _G.gsoSDK then      
+		target = _G.gsoSDK.TS:GetTarget(range) 
     elseif _G.SDK and _G.SDK.Orbwalker then 
-	target = _G.SDK.TargetSelector:GetTarget(range) 
+		target = _G.SDK.TargetSelector:GetTarget(range) 
 	else 
         target = GOS:GetTarget(range) 
     end 
     return target 
 end
+
 
 local function ClosestHero(range,team)
     local bestHero = nil
