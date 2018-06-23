@@ -65,8 +65,8 @@ local function IsValidTarget(target, range)
 	return target ~= nil and target.valid and target.visible and not target.dead and target.distance <= range and IsImmune(target) == false
 end
 
-local Q = {range = 925, speed = myHero:GetSpellData(_Q).speed, delay = 0.25, width = myHero:GetSpellData(_Q).width}
-local W = {range = 950, speed = myHero:GetSpellData(_W).speed, delay = 0.25, width = myHero:GetSpellData(_W).width}
+local Q = {range = 925, speed = 2000, delay = 0.25, width = myHero:GetSpellData(_Q).width}
+local W = {range = 950, speed = 1450, delay = 0.25, width = myHero:GetSpellData(_W).width}
 local E = {range = 425}
 local R = {range = 1000, speed = myHero:GetSpellData(_R).speed, delay = 0.25, width = myHero:GetSpellData(_R).width}
 
